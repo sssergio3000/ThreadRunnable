@@ -1,23 +1,14 @@
 package Task4;
 
-public class ClassesAlter2 extends Thread{
+public class ClassesAlter2 extends BaseAlter{
 
-    boolean flag;
-    String s = "Class: ClassesAlter2" ;
+    protected ClassesAlter2(int runNumber) {
+        super(runNumber);
+    }
 
     @Override
-    public void run() {
-        for(int i=0;i<100;i++){
+    void methodToRun() {
+        System.out.println("Class 2");
 
-                System.out.println(s);
-            try {
-                sleep(2000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-
-        }
-
-    }//run
+    }
 }
