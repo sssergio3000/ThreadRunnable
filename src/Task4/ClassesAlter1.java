@@ -10,6 +10,11 @@ public class ClassesAlter1 extends BaseAlter {
     @Override
     void methodToRun() {
         System.out.println("Class 1");
+//        try {
+//            this.sleep(1000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
 
     }
 }

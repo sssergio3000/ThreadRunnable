@@ -13,6 +13,7 @@ abstract public class BaseAlter extends Thread {
     public void run() {
         for (int i = 0; i < runNumber; i++) {
             methodToRun();
+
             switchThread();
         }
     }
